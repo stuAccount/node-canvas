@@ -1,0 +1,16 @@
+{
+  "name": "node-canvas",
+  "private": true,
+  "version": "0.0.0",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace @node-canvas/web",
+    "build": "npm run build --workspace @node-canvas/web",
+    "preview": "npm run preview --workspace @node-canvas/web",
+    "test": "npm run test --workspace @node-canvas/web",
+    "test:watch": "npm run test:watch --workspace @node-canvas/web"
+  }
+}
